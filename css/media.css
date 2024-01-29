@@ -1,0 +1,167 @@
+@media(max-width: 1200px){
+
+    .container{
+        width: 900px;
+
+    }
+
+}
+
+
+
+
+
+@media(max-width: 992px){
+    
+    .container{
+        width: 700px;
+    }
+
+    .promo h1{
+        font-size: 80px;
+    }
+
+    .tour_grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    
+}
+
+
+
+.hamburger{
+    display: none;
+}
+
+
+@media(max-width: 768px){
+    
+    .container{
+        width: 500px;
+    }
+
+    .promo h1 {
+        font-size: 60px;
+    }
+
+    .promo{
+        height: 600px;
+    }
+
+    .hamburger{
+        display: block;
+
+        background: none;
+        border: 0;
+        
+    }
+
+    .menu{
+        position: fixed;
+        left: -100%;
+        top: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.411);
+        backdrop-filter: blur(15px);
+
+        flex-direction: column;
+        padding: 50px;
+
+        transition: 0.3s ease-in;
+    }
+
+    .menu.open{
+        left: 0;
+    }
+
+
+
+
+
+
+
+
+    .white-box{
+        max-width: 100%;
+    }
+
+    .excursion_grid{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .exc_desc{
+        max-width: 100%;
+    }
+    .tour_grid{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+
+
+     
+
+
+
+
+
+    .gallery_grid {
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 186px 194px 260px;
+    }
+
+   .gallery_grid img:nth-child(1n) {
+    grid-row: auto;
+    grid-column: auto ;
+   } 
+
+   .gallery_grid img:nth-child(1) {
+    grid-row: 1/3;
+   }
+
+   .gallery_grid img:nth-child(4) {
+    grid-column: 1/3;
+   }
+
+   .gallery_grid img:nth-child(1n + 5 ) {
+    display: none;
+   }
+
+
+
+
+}
+
+
+
+@media(max-width: 576px){
+    
+    .container{
+        width: 100%;
+        padding: 0 24px;    
+    }
+
+    .promo h1 {
+        font-size: 36px;
+    }
+
+    .white-box{
+        padding: 40px;
+        font-size: 11px;
+    }
+
+    .excursion_item{
+        font-size: 11px;
+    }
+
+    .exc_desc p{
+        font-size: 12px;
+    }
+
+    .exc_desc .btn{
+        width: 200px;
+        height: 40px;
+        font-size: 12px;
+    }
+    
+}
